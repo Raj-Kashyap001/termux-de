@@ -75,6 +75,12 @@ echo "=== Installing scripts ==="
 cp "$PWD/scripts/"*.sh "$HOME/"
 chmod +x "$HOME"/*.sh
 
+# --- Termux:Widget shortcuts ---
+mkdir -p "$HOME/.shortcuts" "$HOME/.shortcuts/tasks"
+cp "$PWD/shortcuts/"*.sh "$HOME/.shortcuts/"
+cp "$PWD/shortcuts/tasks/"*.sh "$HOME/.shortcuts/tasks/"
+chmod +x "$HOME/.shortcuts/"*.sh "$HOME/.shortcuts/tasks/"*.sh
+
 # --- Desktop entries ---
 mkdir -p "$HOME/.local/share/applications" "$HOME/.config/autostart" "$HOME/.config"
 cp "$PWD/desktop/gpu-switch.desktop" "$HOME/.local/share/applications/"

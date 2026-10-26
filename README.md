@@ -35,6 +35,15 @@ curl -fsSL https://raw.githubusercontent.com/Raj-Kashyap001/termux-de/main/setup
 - `desktop/` — app launcher + plank autostart
 - `config/` — GPU mode + updated Steam lock
 
+## Termux:Widget
+
+After setup, add the **Termux:Widget** to your Android home screen. The shortcuts are installed to `~/.shortcuts`:
+
+- `start-xfce` — launch XFCE desktop
+- `steam-bigpicture` — launch Steam in Big Picture mode
+
+Tap the widget and choose the script to run.
+
 ## Notes
 - Steam ARM64 requires the updated lock file (included) due to Valve manifest changes.
 - GPU acceleration on X11 is limited: Panfrost works for X11 GL apps; Vulkan/X11 presentation is not yet available. Android-surface apps can use PanVK.
