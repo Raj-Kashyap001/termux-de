@@ -7,7 +7,13 @@ A reproducible setup for a touch-friendly XFCE desktop on Android/Termux with:
 - Steam ARM64 (bionic) support
 - Touch-friendly XFCE theme (Fluent + Plank dock)
 
-## Install
+## One-click install
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/Raj-Kashyap001/termux-de/main/setup.sh | bash
+```
+
+## Manual install
 
 1. Transfer this folder to your device (e.g. `~/termux-de`).
 2. In Termux:

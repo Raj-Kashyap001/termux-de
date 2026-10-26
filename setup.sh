@@ -4,6 +4,20 @@ set -euo pipefail
 PREFIX="${PREFIX:-/data/data/com.termux/files/usr}"
 HOME="${HOME:-/data/data/com.termux/files/home}"
 
+# Ensure git is available
+if ! command -v git >/dev/null 2>&1; then
+  pkg update -y >/dev/null 2>&1 || true
+  pkg install -y git
+fi
+
+# If running via curl | bash, fetch the repo first
+if [ ! -f "$PWD/drivers/libvulkan_panfrost-zenithblue.so" ]; then
+  if [ ! -d "$HOME/termux-de/.git" ]; then
+    git clone https://github.com/Raj-Kashyap001/termux-de.git "$HOME/termux-de"
+  fi
+  cd "$HOME/termux-de"
+fi
+
 echo "=== Termux Desktop Environment Setup ==="
 
 # --- Repos ---
