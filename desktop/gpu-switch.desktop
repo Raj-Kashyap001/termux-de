@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=GPU Driver Switch
+Comment=Switch between Vulkan and Panfrost for XFCE
+Exec=/data/data/com.termux/files/home/gpu-switch.sh
+Icon=video-display
+Terminal=true
+StartupNotify=true
+Categories=System;Settings;

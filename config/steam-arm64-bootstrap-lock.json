@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "channel": "stable",
+  "platform": "linuxarm64",
+  "build_id": 1792618285,
+  "manifest": {
+    "url": "https://client-update.steamstatic.com/steam_client_linuxarm64",
+    "size": 12582,
+    "sha256": "dd8c6495a4dd519932c3093f20455e1b77afbde7a3762005f2cc15b44c990d57"
+  },
+  "seed_archive": {
+    "url": "https://client-update.steamstatic.com/bins_linuxarm64_linuxarm64.zip.426e3ea97690dd3ddacbfb4b509a4ca9e916b62d",
+    "size": 110383070,
+    "sha256": "a77faaf185f7b0681886d1c30e989d2cd1821cea421d41556e733b9d065b85a1",
+    "member_count": 55,
+    "max_uncompressed_bytes": 536870912
+  },
+  "seed_executable": {
+    "member": "steamrtarm64/steam",
+    "size": 10124968,
+    "sha256": "7faec98260d94ee3c8e801100f1e4af446f70042abafddd351aae7390e6fbc2d",
+    "elf_machine": 183
+  },
+  "supplemental_archives": [
+    {
+      "name": "sdl3_linuxarm64_linuxarm64",
+      "cache_name": "sdl3_linuxarm64_linuxarm64.locked.zip",
+      "url": "https://client-update.steamstatic.com/sdl3_linuxarm64_linuxarm64.zip.1079b9b8da6c5077c141565a84a48deafb77c84c",
+      "size": 9314330,
+      "sha256": "0faefe140e16df62b8af79e86148ebf5d5f8eb924e32d8d91daf6b4676328034",
+      "max_uncompressed_bytes": 67108864,
+      "members": {
+        "steamrtarm64/libSDL3.so.0": {
+          "size": 3329224,
+          "sha256": "804b12692ec774de7d73810b35f3c46a988d7690272cac1a13147085304b81dc"
+        },
+        "steamrtarm64/libSDL3_image.so.0": {
+          "size": 278016,
+          "sha256": "6b4c637a50bb5f2f62e138a4781f0a73717d538452c5fa026f7b190e42232577"
+        },
+        "steamrtarm64/libSDL3_ttf.so.0": {
+          "size": 27297024,
+          "sha256": "a6dc96b8a7deaf4d1feb563390de7f27334610577e5159d4dd17ca1545fbc332"
+        }
+      }
+    }
+  ],
+  "redistribution": false,
+  "source": "Valve public client-update service",
+  "updated_at": "2026-08-23"
+}
